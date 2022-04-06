@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="Genre"
         android:textColor="@color/dark_grey"
         android:textSize="20sp"
@@ -120,7 +120,6 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:scrollbars="none"
-        android:layout_marginBottom="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/country_title">
@@ -201,199 +200,20 @@
 
     </HorizontalScrollView>
 
-    <TextView
-        android:id="@+id/duration_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:text="Duration"
-        android:textColor="@color/dark_grey"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/country_horizontal_view" />
 
-    <HorizontalScrollView
-        android:id="@+id/duration_horizontal_view"
+    <Button
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
-        android:scrollbars="none"
+        android:layout_height="60dp"
+        android:text="Apply Filters"
+        app:layout_constraintTop_toBottomOf="@id/country_horizontal_view"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/apply_filters_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/duration_title">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/duration_chip_group"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:checkedChip="@+id/twenty_chip"
-                app:selectionRequired="true"
-                app:singleLine="true"
-                app:singleSelection="true">
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/twenty_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="20 mins" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/thrity_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="30 mins" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/forty_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="40 mins" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/sixty_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="60 mins" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/eighty_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="80 mins" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/hundred_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="100 mins" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/one_twenty_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="120 mins" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/one_fifty_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="150 mins" />
-
-            </com.google.android.material.chip.ChipGroup>
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
-
-    <TextView
-        android:id="@+id/rating_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="10dp"
-        android:text="Ratings"
-        android:textColor="@color/dark_grey"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/duration_horizontal_view" />
-
-    <HorizontalScrollView
-        android:id="@+id/rating_horizontal_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginTop="8dp"
-        android:scrollbars="none"
-        android:layout_marginBottom="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rating_title">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/rating_chip_group"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:checkedChip="@+id/three_point_chip"
-                app:selectionRequired="true"
-                app:singleLine="true"
-                app:singleSelection="true">
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/three_point_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="3.5/10" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/four_point_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="4.0/10" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/five_point_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="5.0/10" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/six_point_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="6.0/10" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/seven_point_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="7.5" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/eight_point_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="8.0/10" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/customChipStyle"
-                    android:id="@+id/nine_point_chip"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="9.0/10" />
-            </com.google.android.material.chip.ChipGroup>
-
-        </LinearLayout>
-
-    </HorizontalScrollView>
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
 
 
 

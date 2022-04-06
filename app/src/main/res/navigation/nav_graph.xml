@@ -14,7 +14,7 @@
             android:id="@+id/action_homeFragment_to_bottomSheetFragment"
             app:destination="@id/bottomSheetFragment" />
     </fragment>
-    <fragment
+    <dialog
         android:id="@+id/bottomSheetFragment"
         android:name="com.starsolns.datastore.ui.BottomSheetFragment"
         android:label="fragment_bottom_sheet"
@@ -22,5 +22,5 @@
         <action
             android:id="@+id/action_bottomSheetFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-    </fragment>
+    </dialog>
 </navigation>
