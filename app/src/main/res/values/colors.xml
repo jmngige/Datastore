@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="checkedChipBg">#30000051</color>
+    <color name="checkedChipTextColor">#000051</color>
+    <color name="checkedChipIconColor">#000051</color>
+    <color name="uncheckedChipBg">#e0e0e0</color>
+
+
+    <color name="dark_grey">#1b1b1b</color>
+    <color name="light_grey">#e0e0e0</color>
 </resources>

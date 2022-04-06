@@ -1,11 +1,12 @@
-package com.starsolns.datastore
+package com.starsolns.datastore.host
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.starsolns.datastore.R
 import com.starsolns.datastore.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
