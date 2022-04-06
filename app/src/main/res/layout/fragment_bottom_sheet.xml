@@ -211,6 +211,8 @@
         android:id="@+id/apply_filters_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:backgroundTint="#FF6200EE"
         android:layout_marginBottom="15dp"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"/>
