@@ -40,13 +40,13 @@ class DataStoreRepository @Inject constructor(
             }
         }
         .map {Pref->
-           val selecetedGenre = Pref[selectedGenre] ?: "Action"
+           val selectedGenre = Pref[selectedGenre] ?: "Action"
             val selectedGenreId = Pref[selectedGenreId] ?: 0
             val selectedCountry = Pref[selectedCountry] ?: "USA"
             val selectedCountryId = Pref[selectedCountryId] ?: 0
 
             Movie(
-                selecetedGenre,
+                selectedGenre,
                 selectedGenreId,
                 selectedCountry,
                 selectedCountryId
